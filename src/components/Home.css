@@ -1,0 +1,111 @@
+/* HomePage.css */
+
+.home-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1d0202;
+    background-image: url('/Users/jenicemcdaniel/Desktop/SixerProject/sixer-alumni/src/images/IHSsign.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Static background */
+    min-height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.home-title {
+    font-size: 48px;
+    color: #d51d1d;
+    margin-bottom: 20px;
+}
+
+.home-description {
+    font-size: 18px;
+    color: #e7dbdb;
+    margin-bottom: 40px;
+}
+
+.carousel-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.calendar-wrapper {
+    margin-top: 40px;
+}
+
+.calendar-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* MatCards Styling for Spotlight, Travel, and Events Section */
+.card-section {
+    display: flex;
+    flex-direction: column; /* Align the cards vertically */
+    align-items: left; /* Center the cards horizontally within the section */
+    margin: 40px auto;
+    width: 80%; /* Set a width for the container */
+}
+
+.home-card {
+    background-color: white;
+    color: #333;
+    width: 100%; /* Make the card take the full width of the container, or set to a specific width */
+    max-width: 300px; /* Optional: limit the maximum width of the card */
+    margin: 20px 0; /* Add vertical margin for spacing between cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.2s ease-in-out;
+}
+
+.home-card:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 20px;
+    color: #d51d1d; /* Keep consistent with your brand color */
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Ensure the background covers the entire page */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Style the logo in the upper left-hand corner */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 2; /* Ensures the logo is above the content */
+}
+
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Style the main content */
+.content {
+    margin-top: 100px; /* Space the content from the top */
+    text-align: center;
+    color: white; /* Adjust text color based on the background */
+    z-index: 1;
+}

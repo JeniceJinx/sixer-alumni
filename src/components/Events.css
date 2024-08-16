@@ -1,0 +1,56 @@
+.events-page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white; /* Ensure the text is visible against the background */
+}
+/* Container for the upcoming events section */
+.upcoming-events-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent; /* Make the background slightly transparent */
+    text-align: center;
+}
+
+/* Title styling for the upcoming events */
+.upcoming-events-title {
+    font-size: 3em;
+    font-weight: bold;
+    color: white; /* Make the title text black */
+    margin-bottom: 20px;
+}
+
+/* Scrolling container */
+.scrolling-events {
+    height: 150px; /* Height of the scrollable area */
+    overflow: hidden; /* Hide content outside the container */
+    position: relative;
+}
+
+/* List of events */
+.events-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    animation: scroll-up 10s linear infinite; /* Animate the scroll */
+}
+
+/* Individual event items */
+.event-item {
+    margin-bottom: 10px;
+    color: white; /* Make the event text black */
+    font-weight: bold;
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(100%); /* Start off-screen at the bottom */
+    }
+    100% {
+        transform: translateY(-100%); /* Move upwards */
+    }
+}
