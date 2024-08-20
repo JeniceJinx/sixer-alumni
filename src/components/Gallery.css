@@ -1,0 +1,102 @@
+/* Gallery container */
+.gallery-container {
+  display: absolute;
+  justify-content: center;
+  align-items: flex-start;  /* Align items to the start of the flex container (top) */
+  height: 100vh;  /* Full viewport height */
+  text-align: center;  /* Center text */
+  flex-direction: column;  /* Ensure items are stacked vertically */
+  padding-top: 200px;  /* Adjust this value to move the container lower */
+  background-color: rgb(9, 9, 0);
+}
+  
+  /* Gallery rows */
+  .gallery-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 20px;
+  }
+  
+  /* Make sure to target the buttons */
+.gallery-item button {
+  position: top;
+  height: 3px;
+}
+
+  /* Images */
+  .gallery-image {
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+  
+  .add-photo-section {
+    position: absolute;
+    top: 20px;    /* Adjust position from the top */
+    right: 50px;  /* Adjust position from the right */
+    z-index: 3;
+  }
+  .add-photo-section button {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    padding: 5px 10px; /* Smaller padding for a smaller button */
+    border: none;
+    border-radius: 3px; /* Slightly rounded corners */
+    font-size: 12px; /* Smaller font size */
+    cursor: pointer;
+  }
+  
+  .add-photo-section button:hover {
+    background-color: lightgray; /* Hover effect */
+  }
+  
+  .add-photo-form {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 11; /* Ensure it's above the button */
+  }
+  
+  .add-photo-form input,
+  .add-photo-form button {
+    margin-top: 5px;
+  }
+  
+  /* Row animations */
+  .gallery-row-left {
+    animation: scroll-left 30s linear infinite;
+  }
+  
+  .gallery-row-right {
+    animation: scroll-right 30s linear infinite;
+  }
+  
+  /* Scroll left animation */
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Scroll right animation */
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
