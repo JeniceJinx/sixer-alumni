@@ -1,29 +1,36 @@
 import React from 'react';
-import './Home.css'; // Importing the CSS file
-import Carousel from '../components/Carousel'; // Ensure the path is correct
-import UpcomingEvents from '../components/UpcomingEvents'; // Import the UpcomingEvents component
+import './Home.css';  // Import your CSS file for styling
+import Carousel from '../Components/Carousel'; // Ensure the path is correct
+import UpcomingEvents from '../Components/UpcomingEvents'; // Import the UpcomingEvents component
 import { Card, CardContent, Typography } from '@mui/material'; // Importing Mat Cards
+import { useNavigate } from 'react-router-dom'; // Import navigation hook
 
 const Home = () => {
+    const navigate = useNavigate(); // Initialize the navigation hook
+
+    // Function to navigate to Sign In page
+    const goToSignIn = () => navigate('/auth?mode=signin');
+
+    // Function to navigate to Sign Up page
+    const goToSignUp = () => navigate('/auth?mode=signup');
+
     return (
         <div className="home-container">
             <header>
-                <img src="/Users/jenicemcdaniel/sixer-alumni/src/images/IHGLogo.png" alt="Logo" className="logo" />
+                <img src="src/images/IHS SIGN.jpg" alt="Logo" className="logo" />
             </header>
             <main className="content">
                 <h1 className="home-title">Welcome to Sixer Alumni</h1>
                 <p className="home-description">
                     Connect with your fellow alumni, attend events, and stay updated.
                 </p>
+
                 <div className="carousel-wrapper">
-                    {/* Including the Carousel component */}
                     <Carousel />
                 </div>
-                
-                {/* Adding the Mat Cards for Alumni Spotlight, Upcoming Travel, and Current School Events */}
+
                 <section className="card-section">
                     <div className="card-wrapper">
-                        {/* Alumni Spotlight Card */}
                         <Card className="home-card">
                             <CardContent>
                                 <Typography variant="h5" component="div">
@@ -35,7 +42,6 @@ const Home = () => {
                             </CardContent>
                         </Card>
 
-                        {/* Upcoming Travel Card */}
                         <Card className="home-card">
                             <CardContent>
                                 <Typography variant="h5" component="div">
@@ -47,7 +53,6 @@ const Home = () => {
                             </CardContent>
                         </Card>
 
-                        {/* Current School Events Card */}
                         <Card className="home-card">
                             <CardContent>
                                 <Typography variant="h5" component="div">
@@ -61,11 +66,13 @@ const Home = () => {
                     </div>
                 </section>
 
-                {/* Adding the Upcoming Events Section */}
                 <section className="upcoming-events-section">
                     <UpcomingEvents />
                 </section>
-               
+
+                {/* Buttons to navigate to sign-in and sign-up pages */}
+                <button className="open-modal-button" onClick={goToSignIn}>Sign In</button>
+                <button className="open-modal-button" onClick={goToSignUp}>Sign Up</button>
             </main>
         </div>
     );

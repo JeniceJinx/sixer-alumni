@@ -2,21 +2,21 @@ import React, { useState, useEffect } from 'react';
 import Calendar from 'react-calendar'; // Calendar component
 import 'react-calendar/dist/Calendar.css'; // Calendar component's styles
 import './Events.css'; // Custom styles
-import photo1 from '../images/photo1.jpg';
-import photo2 from '../images/photo2.jpg';
-import photo3 from '../images/photo3.jpg';
-import photo4 from '../images/photo4.jpg';
-import photo5 from '../images/photo5.jpg';
-import photo6 from '../images/photo6.jpg';
-import photo7 from '../images/photo7.jpg';
-import photo8 from '../images/photo8.jpg';
-import photo10 from '../images/photo10.jpg';
-import photo11 from '../images/photo11.jpg';
-import photo12 from '../images/photo12.jpg';
-import photo13 from '../images/photo13.jpg';
-import photo14 from '../images/photo14.jpg';
-import photo15 from '../images/photo15.jpg';
-import photo16 from '../images/photo16.jpg';
+import Photo1 from '../images/Photo1.jpg';
+import Photo2 from '../images/Photo2.jpg';
+import Photo3 from '../images/Photo3.jpg';
+import Photo4 from '../images/Photo4.jpg';
+import Photo5 from '../images/Photo5.jpg';
+import Photo6 from '../images/Photo6.jpg';
+import Photo7 from '../images/Photo7.jpg';
+import Photo8 from '../images/Photo8.jpg';
+import Photo10 from '../images/Photo10.jpg';
+import Photo11 from '../images/Photo11.jpg';
+import Photo12 from '../images/Photo12.jpg';
+import Photo13 from '../images/Photo13.jpg';
+import Photo14 from '../images/Photo14.jpg';
+import Photo15 from '../images/Photo15.jpg';
+import Photo16 from '/Users/jenicemcdaniel/Desktop/SixerProject/sixer-alumni/src/images/Photo16.jpg';
 
 
 const EventsPage = () => {
@@ -24,7 +24,7 @@ const EventsPage = () => {
     const [backgroundIndex, setBackgroundIndex] = useState(0);
 
     const backgroundImages = [
-        photo1, photo2, photo3, photo5, photo6, photo4, photo7, photo8, photo16, photo15, photo14, photo10,photo11, photo12, photo13
+        Photo1, Photo2, Photo3, Photo5, Photo6, Photo4, Photo7, Photo8, Photo16, Photo15, Photo14, Photo10,Photo11, Photo12, Photo13
     ];
     
 

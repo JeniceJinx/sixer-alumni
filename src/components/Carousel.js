@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import './Carousel.css'; // Optional: Import carousel-specific styles
-import photo1 from '../images/photo1.jpg';
-import photo2 from '../images/photo2.jpg';
-import photo3 from '../images/photo3.jpg';
-import photo4 from '../images/photo4.jpg';
-import photo5 from '../images/photo5.jpg';
-import photo6 from '../images/photo6.jpg';
-import photo7 from '../images/photo7.jpg';
-import photo8 from '../images/photo8.jpg';
-import photo10 from '../images/photo10.jpg';
-import photo11 from '../images/photo11.jpg';
-import photo12 from '../images/photo12.jpg';
-import photo13 from '../images/photo13.jpg';
-import photo14 from '../images/photo14.jpg';
-import photo15 from '../images/photo15.jpg';
-import photo16 from '../images/photo16.jpg';
+import photo1 from '../images/Photo1.jpg';
+import photo2 from '../images/Photo2.jpg';
+import photo3 from '../images/Photo3.jpg';
+import photo4 from '../images/Photo4.jpg';
+import photo5 from '../images/Photo5.jpg';
+import photo6 from '../images/Photo6.jpg';
+import photo7 from '../images/Photo7.jpg';
+import photo8 from '../images/Photo8.jpg';
+import photo10 from '../images/Photo10.jpg';
+import photo11 from '../images/Photo11.jpg';
+import photo12 from '../images/Photo12.jpg';
+import photo13 from '../images/Photo13.jpg';
+import photo14 from '../images/Photo14.jpg';
+import photo15 from '../images/Photo15.jpg';
+import photo16 from '../images/Photo16.jpg';
 
 
 
@@ -61,4 +61,3 @@ const Carousel = () => {
 
 
 export default Carousel;
-
